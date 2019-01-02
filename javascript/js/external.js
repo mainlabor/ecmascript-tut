@@ -1,0 +1,1 @@
+document.write("In javascript everythink is a object");

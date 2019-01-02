@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>not a number</title>
+    <script>
+        var y = 30;
+        
+        function fun1(){
+            var x = 20;
+            document.write("Inside fun1 x:"+x+"<br>");
+            document.write("Inside fun1 y:"+y+"<br>");
+        }
+
+        function fun2(){
+            var a = 30;
+            document.write("Inside fun2 a:"+a+"<br>");
+            document.write("Inside fun2 y:"+y+"<br>");
+        }
+
+        fun1();
+        fun1();
+        
+        document.write("Inside fun1 y:"+y+"<br>");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

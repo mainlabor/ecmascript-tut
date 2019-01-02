@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+ build-service:
+  build: ./dockerfile
+ website:
+  image: httpd
+  volumes:
+    - ../javascript:/usr/local/apache2/htdocs/
+  ports:
+    - 2000:80
+  depends_on:
+    - build-service

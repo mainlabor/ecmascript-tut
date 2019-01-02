@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>not a number</title>
+</head>
+<body>
+    <script>
+     var javascriptmark = parseInt(prompt("JS"));
+     var javamark = parseInt(prompt("JAVA"));
+     var dotnetmark = parseInt(prompt("DOTNET"));
+
+    var total = javascriptmark+javamark+dotnetmark;
+    document.write("Total = "+total+"<br>");
+    
+    var average = total/3;
+    document.write("Average: "+average+"<br>")
+
+if(javascriptmark>=35 && javamark>=55 && dotnetmark>=35){
+    document.write("Result:Passed");
+    if(average>=35 && average<60){
+        document.write("Grade C:<br>")
+    }
+    else if(average>=60 && average<70){
+        document.write("Grade B:<br>")
+    }
+    else{
+        document.write("Grade A:<br>")
+    }
+}else{
+    document.write("Result:Failed");
+}
+
+    </script>
+</body>
+</html>
