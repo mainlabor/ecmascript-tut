@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+ httpd-micro:
+  image: httpd
+  volumes:
+    - .:/usr/local/apache2/htdocs/
+  ports:
+    - 2003:80

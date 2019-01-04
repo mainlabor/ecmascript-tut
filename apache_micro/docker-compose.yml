@@ -1,13 +1,14 @@
 version: '3'
 
 services:
- build-service:
-  build: ./dockerfile
- website:
+ httpd-micro:
+#  build: ./dockerfile
+# website:
   image: httpd
   volumes:
-    - ../javascript:/usr/local/apache2/htdocs/
+#    - ../javascript:/usr/local/apache2/htdocs/
+    - ../javascript_es5:/usr/local/apache2/htdocs/
   ports:
-    - 2000:80
-  depends_on:
-    - build-service
+    - 2001:80
+  #depends_on:
+  #  - build-service

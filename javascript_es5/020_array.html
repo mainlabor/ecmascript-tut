@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+
+<script>
+
+    var array1 = ["Hans" , 1 , false];
+    for(var x=0;x <= array1.length; x++){
+        console.log(array1[x]);
+    }
+    array1[0] = "Wurst";
+    console.log(array1[0]);
+
+    array1.push("Olaf");
+    console.log(array1[3]);
+
+    array1.pop("Mister");
+    console.log(array1[3]);
+
+    var array2 = [1,2,3];
+
+    function func1(item){
+        if(item <= 2){
+            console.log(item + 2);
+        }else{
+            console.log(item + 20);
+        }
+    }
+array2.forEach(func1);
+
+var array3 = [10,20,30];
+var array4 = [11,21,31];
+
+var array5 = array3.concat(array4);
+console.log(array5);
+
+var mx = [
+    ["Hans" , 1],
+    ["Jan" , 2],
+    ["Wurst" , 3]
+];
+
+console.log(mx[0][0]);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style>
+.klasse0{
+    font-size:25px;
+    color:#000;
+    margin-left:50%;
+}
+.klasse1{
+    font-size:20px;
+    color:green;
+}
+.klasse2{
+    margin-left:200px;
+    color:blue;
+}
+</style>
+</head>
+<body>
+    <h1 id="ID_title" class="klasse2">TITLE</h1>
+    <h1 id="ID_title2" class="klasse1">TITLE</h1>
+    <h1 id="ID_title3">TITLE</h1>
+<script>
+document.getElementById("ID_title").className += " klasse1";
+document.getElementById("ID_title3").className = "klasse0";
+</script>
+
+</body>
+</html>

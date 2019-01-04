@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+  <div id="main">
+    <p id="text1">Hier ist Text</p>
+  </div>
+    
+
+<script>
+var oldT = document.getElementById("Old text");
+var newT = document.createElement("New text");
+
+newT.innerHTML = "Neuer Text";
+
+var main = document.getElementById("main");
+
+main.replaceChild(newT, oldT);
+</script>
+
+</body>
+</html>
