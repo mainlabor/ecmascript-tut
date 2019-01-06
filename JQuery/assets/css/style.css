@@ -1,0 +1,211 @@
+body{
+	background-color: gray;
+	color: #fff;
+	
+}
+
+h1 {
+	margin: 20px 0;
+	padding-bottom: 7px;
+	border-bottom: 2px solid #ffc107;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h2 {
+	margin: 20px 0;
+	color: #000;
+}
+
+.container {
+	padding: 25px 0;
+}
+
+.row {
+	margin: 20px 0px;
+}
+
+.row [class^="col"]:nth-child(even) {
+	/* background: blue; */
+}
+
+.row [class^="col"]:nth-child(odd) {
+	/* background: black; */
+}
+
+[class^="col"] [class^="col"]:nth-child(even) {
+	height: 40px;
+	/* background-color: red; */
+}
+
+[class^="col"] [class^="col"]:nth-child(odd) {
+	height: 40px;
+	/* background-color: gray; */
+}
+
+.conbg {
+	background: green;
+}
+
+.colN {
+	font-size: 3rem;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	width: 10%;
+}
+
+.navbar-toggler {
+	outline: none;
+	    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button {
+	outline: none;
+	    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+a:active,
+a:focus {
+	outline: none;
+	    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar.navbar-default {
+    background-color: #000;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar.navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ifra{
+	width:50%;
+	float:left;
+	border: solid 1px;
+}
+.editor{
+	background-color: #000;
+	color: blue;
+	white-space: -moz-pre-wrap !important;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+white-space: pre-wrap;
+word-wrap: break-word;
+}
+
+.dd-item-sm{
+	margin: 5px 5px;
+}
+.bg-black{
+	background-color: #232323;
+	color:red;
+}
+.imgP{
+	padding: 25px 0px;
+}
+h4{
+	font-weight:bold;
+	margin:6px;
+}
+
+.navbar-custom {
+    background-color: #ff5500;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: red;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: red;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+.nav-link, a:hover{
+color:#fff;
+font-weight:bold;
+}
+.nbt{
+	background-color: #fff;
+	color:#000;
+}
+@media (min-width: 320px) and (max-device-width: 575px) {
+
+}
+
+@media (min-width: 576px) and (max-device-width: 767px) {
+
+}
+
+@media (min-width: 768px) and (max-device-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-device-width: 1199px) {
+	.embP{
+		padding: 25px 25px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.embP{
+		padding: 25px 50px;
+	}
+}
+
+/*
+h1 {
+	margin: 20px 0;
+	padding-bottom: 7px;
+	border-bottom: 2px solid #ffc107;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h2 {
+	margin: 20px 0;
+	color: #000;
+}
+
+.container {
+	padding: 0px 0;
+}
+
+
+
+
+
+[class^="col"] [class^="col"]:nth-child(even) {
+	height: 40px;
+	background-color: red;
+}
+
+[class^="col"] [class^="col"]:nth-child(odd) {
+	height: 40px;
+	background-color: gray;
+}
+
+.conbg{
+	background:green;
+}
+
+*/

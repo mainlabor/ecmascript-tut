@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de" id="html">
+<head>
+	<title>JQuery</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" 			content="width=device-width, initial-scale=1.0, maximum-scale=3.0, shrink-to-fit=no" />
+	<meta name="expires" 			content="0">
+	<meta name="Audience" 			content="all">
+	<meta name="Description"		content="">
+	<meta name="Keywords"			content="">
+	<meta name="Robots" 			content="index,follow,all" />
+	<meta name="Author" 			content="">
+	<meta name="CMS" 				content="">
+	<meta name="revisit-after"		content="14 days">
+	<link rel="icon" 				href="*.ico" type="image/x-icon">
+	<link rel="stylesheet" 			href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet"          href="assets/css/all.css">
+	<link rel="stylesheet" 			href="assets/css/style.css">
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<div class="container jumbotron">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Euro-Rechner</h2>
+            <div class="input-group">
+                <span id="outputicon" class="input-group-addon">€</span>
+                <input id="input" placeholder="0" class="form-control">
+            </div>
+            <div class="input-group">
+                <span id="outputicon" class="input-group-addon">$</span>
+                <input id="output" placeholder="0" class="form-control">
+            </div>
+            <div class="input-group">
+                    <div class="btn-group">
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Währung</button>
+                        <div class="dropdown-menu" id="dropdown">
+                            <a class="dropdown-item" href="#" option="$">$ Dollar</a>
+                            <a class="dropdown-item" href="#" option="Y">Y YEN</a>
+                        </div>
+                    </div>
+            </div>
+        </div>    
+    </div>
+</div>
+
+<script>
+        $(document).ready(function(){
+
+            var changevalue = 1.17;
+            var input = $("#input");
+            var output = $("#output");
+            var outputicon = $("#outputicon");
+            var inputvalue;
+            var outputvalue;
+            var dropdown = $(".dropdown-item");
+
+            input.on("keyup", function(){
+                inputvalue = input.val();
+                outputvalue = inputvalue * changevalue;
+                output.val(outputvalue);
+            })
+
+            $(".dropdown-item").on("click", function(){
+                console.log("dropdown");
+                switch($(this).attr("option")){
+                    case "$":
+                    outputicon.html("$");
+                    changevalue = 1.17;
+                    output.val(inputvalue * changevalue);
+                    break;
+                    case "Y":
+                    outputicon.html("Y");
+                    changevalue = 1.44;
+                    output.val(inputvalue * changevalue);
+                    break;
+                }
+            })
+        })
+    </script>
+
+</body>
+</html>
